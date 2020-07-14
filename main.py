@@ -63,9 +63,14 @@ async def on_message(message):
       reply = ['HaHa','Laugh Out Loud', 'that was funny', 'What a joke']
       result = reply[randint(0,3)]
       await message.channel.send(result)
+    
+    oktriggers = ['ok', 'Ok', 'OK', 'okay', 'Ok', 'OKAY']
 
-    
-    
+    if userinput in oktriggers :
+      replies = ['Are you sure?', 'Ok']
+      result = replies[randint(0,1)]
+      await message.channel.send(result)
+
 
     # else: 
     #     await message.channel.send("I don't know how to respond to that! You could check the list of triggers I can respond to by doing `!replies`!")
