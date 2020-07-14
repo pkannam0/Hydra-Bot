@@ -7,4 +7,4 @@ Hydra - A super fun Discord bot made using Python
 
 https://discord.gg/AYBbtw
 
-![What is this](Chatbot.jpg)
+![What is this](Chatbot.JPG)
