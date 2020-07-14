@@ -71,8 +71,20 @@ async def on_message(message):
       result = replies[randint(0,1)]
       await message.channel.send(result)
 
+    if userinput == 'sad':
+      await message.channel.send('No, never be sad, always be happy!!')
 
-    # else: 
+    if userinput == 'yes':
+        replies = ['Ok', 'Fine', 'Good']
+        result = replies[randint(0,3)]
+        await message.channel.send(result)
+
+    nametriggers = ['What is your name', 'what is your name', 'Whats your name?', "What's your name"]
+
+    if userinput in nametriggers:
+      await message.channel.send('My name is Hydra. I am the slithering chatbot of Discord')
+
+        # else: 
     #     await message.channel.send("I don't know how to respond to that! You could check the list of triggers I can respond to by doing `!replies`!")
 
 # YOU CAN EDIT THIS
